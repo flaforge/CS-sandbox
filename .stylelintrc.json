@@ -1,0 +1,33 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-recommended-scss"
+    ],
+    "rules": {
+        "color-no-invalid-hex": true,
+        "font-family-no-duplicate-names": true,
+        "declaration-block-no-duplicate-properties": true,
+        "no-descending-specificity": null,
+        "no-invalid-position-at-import-rule": null,
+        "scss/no-global-function-names": null,
+        "selector-class-pattern": [
+            "^[a-z]([a-z0-9]*)(-[a-z0-9]+)*(--[a-z0-9]+)?(__[a-z0-9]+)?$",
+            {
+                "message": "Expected class selector to be in BEM format (block__element--modifier)",
+                "severity": "warning"
+            }
+        ],
+        "declaration-no-important": true,
+        "import-notation": "string",
+        "selector-max-id": 0,
+        "max-nesting-depth": [
+            3,
+            {
+                "ignore": [
+                    "pseudo-classes"
+                ]
+            }
+        ],
+        "color-named": "never"
+    }
+}

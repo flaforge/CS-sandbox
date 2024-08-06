@@ -1,0 +1,17 @@
+{
+    "manifestGlob": "components/*/manifest.json",
+    "customCommands": [
+        {
+            "name": "Preview",
+            "value": "npx @squiz/dxp-cli-next cmp dev ."
+        },
+        {
+            "name": "Deploy",
+            "value": "npx @squiz/dxp-cli-next cmp deploy ."
+        },
+        {
+            "name": "List root files (command: ls -l)",
+            "value": "ls -l"
+        }
+    ]
+}

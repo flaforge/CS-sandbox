@@ -1,0 +1,39 @@
+$theme: 'violet';
+$font: "Open Sans", sans-serif;
+$font-headings: "Poppins", sans-serif;
+$white: #fff;
+$black: #252525;
+$color-bg: $white;
+$color-text: $black;
+$primary: linear-gradient(18deg, rgb(48 63 131 / 100%) 35%, rgb(116 70 151 / 100%) 100%);
+$secondary: #F5EDFB;
+$tertiary: #644593;
+$accent: #EDAA5C;
+
+$box-shadow:  1px 1px 10px 0 rgb(117 71 151 / 15%);
+$border-radius: 1.25rem;
+
+// spacing
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xl: 5rem;
+
+// font sizes
+// $font-size-huge: 3.5rem;
+// $font-size-xxl: 3rem; // Very large text, e.g., main headers
+$font-size-xl: 2.7rem; // Extra large text, e.g., section headers
+$font-size-lg: 2.4rem; // Large text, e.g., subheaders
+$font-size-md: 1.25rem; // Medium text, e.g., sub-subheaders
+// $font-size-sm: 1.25rem; // Small text, e.g., emphasized text
+// $font-size-xs: 0.75rem; // Small text, e.g., spans
+$base-font-size: 1.125rem; // Base font size for paragraphs
+$font-size-xs: 1rem; // Extra small text, e.g., spans
+
+// Line heights
+// $base-line-height: 1.5rem;
+// $line-height-xxl: 3rem;
+$line-height-xl: 3.5rem;
+$line-height-lg: 1.9rem;
+$line-height-md: 1.75rem;
+$line-height-sm: 1.625rem;

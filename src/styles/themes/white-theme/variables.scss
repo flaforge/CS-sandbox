@@ -1,0 +1,35 @@
+$theme: 'white';
+$font: "Roboto", sans-serif;
+$font-headings: "Roboto Condensed", sans-serif;
+$white: #fff;
+$black: #252525;
+$color-bg: $white;
+$color-text: $black;
+$primary: #BF1823;
+$accent: #C3647C;
+
+// font sizes
+// $font-size-huge: 3.5rem;
+// $font-size-xxl: 3rem; // Very large text, e.g., main headers
+$font-size-xl: 2.375rem; // Extra large text, e.g., section headers
+$font-size-lg: 1.5rem; // Large text, e.g., subheaders
+// $font-size-md: 1.5rem; // Medium text, e.g., sub-subheaders
+$font-size-sm: 1.25rem; // Small text, e.g., emphasized text
+// $font-size-xs: 0.75rem; // Small text, e.g., spans
+$base-font-size: 1.125rem; // Base font size for paragraphs
+$font-size-xs: 1rem; // Extra small text, e.g., spans
+
+// spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 4rem;
+$spacing-xl: 5rem;
+
+// Line heights
+$base-line-height: 1.5rem;
+$line-height-xxl: 3rem;
+$line-height-xl: 2.5rem;
+$line-height-lg: 2rem;
+$line-height-md: 1.75rem;
+$line-height-sm: 1.5rem;

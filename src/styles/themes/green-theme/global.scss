@@ -1,0 +1,35 @@
+body {
+    font-family: $font;
+    transition: all 0.5s ease-in-out;
+    color: $color-text;
+    line-height: $line-height-sm;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+        top: 0;
+        background-image: url('@/images/backgrounds/dot-bg.png');
+        z-index: $z-index-below;
+    }
+
+    * {
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+h2 {
+    font-size: $font-size-xl;
+    color: $color-text;
+    font-weight: $font-semibold;
+    text-align: center;
+    margin-bottom: $spacing-xl;
+}
+
+h3 {
+    font-size: $font-size-md;
+    line-height: $line-height-lg;
+}

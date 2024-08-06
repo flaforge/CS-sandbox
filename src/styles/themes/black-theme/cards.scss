@@ -1,0 +1,98 @@
+.cards {
+    &__header {
+        align-items: center;
+        margin-bottom: $spacing-xl;
+
+        @media screen and (max-width: $breakpoint-md) {
+            align-items: stretch;
+            text-align: center;
+            margin-bottom: $spacing-md;
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__link {
+        padding: $spacing-sm $spacing-md;
+        background-color: $color-bg;
+        left: $spacing-sm;
+        position: relative;
+        &::after {
+            content: url('@/images/icons/chevron-white-right.svg');
+            margin-left: $spacing-sm;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        transition: background-color 0.3s ease-in-out;
+        gap: $spacing-md;
+
+        &:hover {
+            background-color: $color-text;
+
+            .cards__card-link {
+                padding-left: 0;
+                text-decoration: none;
+            }
+
+            .cards__heading {
+                line-height: $line-height-md;
+                margin-top: 0;
+            }
+
+            .cards__content-type,
+            .cards__supporting-text {
+                max-height: 100%;
+                opacity: 1;
+                line-clamp: 10;
+                -webkit-line-clamp: 10;
+            }
+
+            .cards__supporting-text {
+                color: $color-bg;
+            }
+        }
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        line-height: $line-height-xxl;
+        font-size: $font-size-sm;
+        max-width: 100%;
+        margin-top: auto;
+        transition: all 0.3s ease-in-out;
+
+        a {
+            padding: $spacing-xs;
+            color: $color-bg;
+            background-color: $color-text;
+            box-decoration-break: clone;
+        }
+    }
+
+    &__content-type {
+        color: $accent;
+        text-transform: capitalize;
+        font-size: $font-size-xs;
+    }
+
+    &__image {
+        filter: saturate(50%);
+    }
+
+    &__content-type,
+    &__supporting-text {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, max-height 0.3 ease-in-out;
+    }
+}

@@ -1,0 +1,43 @@
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&family=Roboto:wght@400;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap';
+@import './mixins';
+
+h1,
+.heading-primary {
+    @include heading-styles($font-size-xxl, $line-height-xxl, $font-semibold);
+}
+
+h2,
+.heading-secondary {
+    @include heading-styles($font-size-xl, $line-height-xl, $font-semibold);
+}
+
+h3,
+.heading-tertiary {
+    @include heading-styles($font-size-lg, $line-height-lg, $font-semibold);
+}
+
+h4,
+.heading-quaternary {
+    @include heading-styles($font-size-md, $line-height-md, $font-semibold);
+}
+
+h5,
+.heading-quinary {
+    @include heading-styles($font-size-sm, $line-height-sm, $font-semibold);
+}
+
+h6,
+.heading-senary {
+    @include heading-styles($base-font-size, $line-height-sm, $font-semibold);
+}
+
+// text styles for tags, categories
+.text-tag {
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    display: block;
+}

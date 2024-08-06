@@ -1,0 +1,15 @@
+@import './variables';
+@import './fonts';
+@import './mixins';
+@import './global';
+@import './switcher';
+
+// Components
+@import 'components/**/*';
+
+// TODO: set vite config to handle paths like: 'themes/**/theme-main'
+// Themes
+@import 'themes/black-theme/theme-main';
+@import 'themes/white-theme/theme-main';
+@import 'themes/violet-theme/theme-main';
+@import 'themes/green-theme/theme-main';

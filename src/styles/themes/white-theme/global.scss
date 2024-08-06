@@ -1,0 +1,43 @@
+body {
+    background-color: $color-bg;
+    font-family: $font;
+    transition: all 0.5s ease-in-out;
+    color: $color-text;
+
+    * {
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+
+h2 {
+    display: inline-block;
+    position: relative;
+    background: $color-text;
+    padding: 0.625rem 1.25rem;
+    text-transform: uppercase;
+    color: $color-bg;
+    font-size: $font-size-xl;
+    margin-bottom: 5rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100vw;
+        height: 1px;
+        background: $color-text;
+        transform: translateY(-50%);
+        z-index: $z-index-below;
+    }
+}
+
+a {
+    color: $color-text;
+}
+
+p {
+    line-height: $base-line-height;
+    font-size: $base-font-size;
+}

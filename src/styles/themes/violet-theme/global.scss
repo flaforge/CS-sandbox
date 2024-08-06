@@ -1,0 +1,32 @@
+body {
+    background-color: $color-bg;
+    font-family: $font;
+    transition: all 0.5s ease-in-out;
+    color: $color-text;
+
+    * {
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+h2 {
+    font-size: $font-size-xl;
+    color: $color-text;
+    font-weight: $font-semibold;
+    font-family: $font-headings;
+    margin-bottom: $spacing-xl;
+}
+
+h3 {
+    font-size: $font-size-md;
+    color: $color-text;
+    font-weight: $font-semibold;
+    font-family: $font-headings;
+    line-height: $font-size-lg;
+}
+
+p {
+    font-size: $base-font-size;
+    font-weight: $font-normal;
+    line-height: $line-height-sm;
+}

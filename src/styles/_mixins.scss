@@ -1,0 +1,49 @@
+// for all fonts on website
+@mixin heading-styles($font-size, $line-height, $font-weight, $color: $color-text) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+// outline focus
+@mixin focus-outline( $color: $color-focus ) {
+  outline: 2px solid $color;
+}
+
+// flex mixins
+@mixin flex-center-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@mixin center-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+// centering absolute element in both directions
+@mixin center-absolute-xy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// centering absolute element vertically
+@mixin center-absolute-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

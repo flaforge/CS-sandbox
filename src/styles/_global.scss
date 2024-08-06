@@ -1,0 +1,116 @@
+// reset everything
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 solid transparent;
+}
+
+// reset body line-height
+body {
+    min-height: 100vh;
+    text-rendering: optimizespeed;
+    font-family: $font;
+    font-weight: $font-normal;
+    font-optical-sizing: auto;
+    color: $black;
+    background-color: $white;
+    line-height: $font-size-sm;
+}
+
+// all media elements set to block and full width
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: block;
+    max-width: 100%;
+}
+
+// inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+// collapse table
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// reset anchor style
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+    -webkit-tap-highlight-color: transparent;
+}
+
+// reset list style
+ol,
+ul {
+    list-style: none;
+}
+
+// reset text input style
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+textarea,
+select {
+    appearance: none;
+    width: 100%;
+}
+
+// reset firefox placeholder opacity
+::placeholder {
+    opacity: 1;
+}
+
+// reset textarea style
+textarea {
+    // move the label to the top
+    vertical-align: top;
+
+    // turn off scroll bars in IE unless needed
+    overflow: auto;
+}
+
+// reset checkbox and radio style
+[type='checkbox'],
+[type='radio'] {
+    appearance: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+html {
+    font-size: $base-font-size;
+    text-size-adjust: 100%;
+}

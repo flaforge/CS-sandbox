@@ -1,0 +1,59 @@
+.single-column {
+    gap: 5rem;
+
+    &__heading {
+        font-size: $font-size-xl;
+        font-family: $font-headings;
+        color: $color-text;
+        font-weight: $font-bold;
+        margin-bottom: 1.875rem;
+    }
+
+    &__content {
+        font-size: $base-font-size;
+        color: $color-text;
+    }
+
+    p {
+        font-size: $base-font-size;
+        color: $color-text;
+        line-height: $line-height-sm;
+    }
+
+    &__image {
+        border: 0.625rem solid $color-text;
+    }
+
+    .text-tag {
+        color: $primary;
+        font-size: $font-size-xs;
+        text-transform: capitalize;
+        letter-spacing: 0.2rem;
+    }
+
+    &__link {
+        margin-top: 1.875rem;
+        border: none;
+        padding: 0.25rem;
+        text-decoration: none;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: calc(100% - 2rem);
+            height: 2px;
+            background: $primary;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        &::after {
+            content: url('@/images/icons/chevron-pink-right.svg');
+        }
+
+        &:hover::before {
+            background: darken($primary, 20%);
+        }
+    }
+}

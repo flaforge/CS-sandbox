@@ -1,0 +1,16 @@
+.blockquote {
+  border-left: 1px solid $black;
+  padding: 0 1.875rem;
+  color: $black;
+  font-size: $base-font-size;
+  line-height: $line-height-md;
+  display: flex;
+  flex-direction: column;
+
+  &__author {
+    margin-top: 0.5rem;
+    font-size: $font-size-xs;
+    font-weight: $font-semibold;
+    font-style: normal;
+  }
+}

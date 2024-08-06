@@ -1,0 +1,39 @@
+{
+  "name": "components-library",
+  "private": true,
+  "version": "0.1.1",
+  "type": "commonjs",
+  "scripts": {
+    "vermgmt": "vermgmt",
+    "format": "prettier --write \"components/**/*.{js,css,json,md,cjs}\"",
+    "lint:js": "eslint \"components/**/*.js\" \"src/scripts/**/*.js\"",
+    "lint:scss": "stylelint \"components/**/*.scss\" \"src/styles/**/*.scss\"",
+    "lint-fix": "eslint \"components/**/*.js\" \"src/scripts/**/*.js\" --fix && stylelint \"components/**/*.scss\" \"src/styles/**/*.scss\" --fix && npm run format",
+    "build": "vite build",
+    "serve": "vite",
+    "dev": "npx @squiz/dxp-cli-next cmp dev components",
+    "deploy": "npm run deploy:component --",
+    "deploy:component": "npx @squiz/dxp-cli-next cmp deploy components/$npm_config_name"
+  },
+  "devDependencies": {
+    "eslint": "^9.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "globals": "^15.8.0",
+    "prettier": "^3.3.2",
+    "sass": "^1.77.6",
+    "stylelint": "^16.7.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-scss": "^6.4.1"
+  },
+  "dependencies": {
+    "@squiz/vermgmt": "^1.0.2",
+    "fast-glob": "^3.3.2",
+    "glob": "^10.4.2",
+    "serve": "^14.2.3",
+    "vite": "^5.3.3",
+    "vite-plugin-sass-glob-import": "^3.0.2",
+    "xss": "^1.0.15"
+  }
+}
