@@ -8,34 +8,6 @@ The library serves an educational purpose, with code comments explaining certain
 
 ## Getting Started
 
-### Cloning the Repository
-
-Clone the repository and navigate to the project directory:
-
-```
-git clone git@gitlab.squiz.net:azenderowska/vite-components-library.git
-```
-
-```
-cd vite-components-library
-```
-
-### Removing Git Connection
-
-If you want to detach the project from the original Git repository:
-
-```
-rm -rf .git
-```
-
-### Forking the Repository
-
-Alternatively, you can fork this project to your repository to keep it separate and manage your changes:
-
-1. Fork the repository on GitHub.
-2. Clone the forked repository to your local machine.
-3. Navigate to the project directory.
-
 ### Installing Dependencies
 
 Install all necessary dependencies:
@@ -117,7 +89,7 @@ serve dist -l 5000
 
 This project includes the `vermgmt` library, which helps in versioning and deploying multiple components simultaneously. Although optional, it can significantly streamline your workflow. To check its available options, run:
 
-```npm run vermgmt```
+`npm run vermgmt`
 
 ## Project Structure
 
